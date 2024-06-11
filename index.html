@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2> Fill out the form to place your ice cream order! </h2>
+	<form action="" method="get" id="form">
+		<div class="required">
+			<p> *required</p>
+		</div>
+		<div class="user-info">
+			<div class="input-wrapper">
+				<label for="name">Name*</label>
+				<input type="text" id="name" name="name">
+			</div>
+			<div class="input-wrapper">
+				<label for="email">Email*</label>
+				<input type="email" id="mail" name="email">
+			</div>
+			<div class="input-wrapper">
+				<label for="phone">Phone*</label>
+				<input type="tel" id="number" name="phone">
+			</div>
+			<div class="ice-cream-flavor">
+				<label for="ice-cream-flavor">Ice Cream Flavor</label>
+				<select name="ice-cream-flavor" id="ice-cream-flavor">
+					<option value="" disabled>--Options--</option>
+					<option value="gopher-guts">Greasy Grimy Gopher Guts</option>
+					<option value="monkey-meat">Mutilated Monkey Meat</option>
+					<option value="birdy-feet">Itty Bitty Birdy's Feet</option>
+				</select>
+			</div>
+			<div class="cup-cone">
+				<p> Cup or Cone? </p>
+				<div class="cone">
+					<input type="radio" id="cone" value="cone" name="cup-or-cone">
+					<label for="cone" class="cone">Cone</label>
+				</div>
+				<div class="cup">
+					<input type="radio" id="cup" value="cup" name="cup-or-cone">
+					<label for="cup" class="cup">Cup</label>
+				</div>
+			</div>
+			<div class="checkbox">
+				<p> Toppings </p>
+				<div class="sprinkles">
+					<input type="checkbox" id="topping1" name="sprinkles">
+					<label for="topping1">Sprinkles</label>
+				</div>
+				<div class="man-tears">
+					<input type="checkbox" id="topping2" name="grown-men-tears">
+					<label for="topping2">Grown Men's Tears</label>
+				</div>
+				<div class="man-tears">
+					<input type="checkbox" id="topping2.5" name="grown-men-tears-sodium">
+					<label for="topping2.5">Grown Men's Tears - Low Sodium</label>
+				</div>
+				<div class="dust">
+					<input type="checkbox" id="topping3" name="pixie-dust">
+					<label for="topping3">Pixie Dust</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-input-wrapper button-wrapper">
+			<button type="submit">Place Order</button>
+		</div>
+	</form>
+</body>
+</html>
